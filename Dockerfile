@@ -5,6 +5,6 @@ RUN  apt-get update \
      && apt-get install -y wget curl \
      && rm -rf /var/lib/apt/lists/* 
 RUN wget -O - https://raw.githubusercontent.com/audstanley/NodeJs-Raspberry-Pi/master/Install-Node.sh | bash     
-#RUN npm install respberry -g
+RUN npm install respberry -g
 
 #RUN git 
