@@ -1,4 +1,8 @@
 FROM ubuntu
 RUN  apt-get update \
      && apt-get dist-upgrade -y \
-     && rm -rf /var/lib/apt/lists/*
+     && apt-get install nodejs npm -y \
+     && rm -rf /var/lib/apt/lists/* \
+     && npm install respberry -g
+     
+RUN git 
